@@ -1,0 +1,254 @@
+<html>
+
+<head>
+    <title>Coding challenges</title>
+</head>
+
+<body style="margin: 0;">
+    <style>
+        header {
+            text-align: center;
+            font-size: xx-large;
+            font-weight: 900;
+            background-color: rgb(149, 146, 146);
+            height: 10%;
+        }
+
+        .griditem {
+            background-color: lightblue;
+            text-align: center;
+            font-size: large;
+            font-weight: 600;
+        }
+
+        .griditem:hover {
+            background-color: rgb(203, 226, 234);
+            cursor: pointer;
+        }
+
+        #challenges {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 5px;
+            column-gap: 5px;
+            height: 90%;
+        }
+    </style>
+    <header>
+        <form action="ccompiler.html">
+            <input style="margin-left: 100px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                value="Back">
+        </form>
+        You have accepted the challenge to become a pro coder!! <br>
+        Choose any challenge you like from below.
+    </header>
+    <form action="ccompiler.html">
+        <div id="challenges">
+            <div class="griditem">Fibonacci Series<br>Difficulty : Easy <br> Explanation - It is the series in which the
+                next term <br> is equal to the sum of previous two terms. <br>
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Go and code.">
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Sample code." onclick="changeTextareaValue1()">
+
+                <script>
+                    function changeTextareaValue1() {
+                        var defaultValue = "fibonacci code";
+
+                        // Set the value in localStorage
+                        localStorage.setItem('textareaValue', defaultValue);
+
+                        // Redirect to page1.html
+                        window.location.href = 'ccompiler.html';
+                    }
+                </script>
+
+            </div>
+            <div class="griditem">Armstrong numbers<br>Difficulty : Easy <br>Explanation - when you raise the digits to
+                the
+                power of total <br> digits in number and sum them, you get the same number. <br>
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Go and code.">
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Sample code." onclick="changeTextareaValue2()">
+
+                <script>
+                    function changeTextareaValue2() {
+                        var defaultValue = "Armstrong code";
+
+                        // Set the value in localStorage
+                        localStorage.setItem('textareaValue', defaultValue);
+
+                        // Redirect to page1.html
+                        window.location.href = 'ccompiler.html';
+                    }
+                </script>
+
+            </div>
+            <div class="griditem">Check Palindromes <br>Difficulty : Easy <br>Explanation - The reverse of the string or
+                number <br> is equal to the orginal string or number. <br>
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Go and code.">
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Sample code." onclick="changeTextareaValue3()">
+
+                <script>
+                    function changeTextareaValue3() {
+                        var defaultValue = "Palindrome code";
+
+                        // Set the value in localStorage
+                        localStorage.setItem('textareaValue', defaultValue);
+
+                        // Redirect to page1.html
+                        window.location.href = 'ccompiler.html';
+                    }
+                </script>
+
+            </div>
+            <div class="griditem">Check Prime number<br>Difficulty : Medium <br>Explanation - The numbers having only
+                two
+                <br> divisors, 1, and the number itself.<br>
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Go and code.">
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Sample code." onclick="changeTextareaValue4()">
+
+                <script>
+                    function changeTextareaValue4() {
+                        var defaultValue = "Prime code";
+
+                        // Set the value in localStorage
+                        localStorage.setItem('textareaValue', defaultValue);
+
+                        // Redirect to page1.html
+                        window.location.href = 'ccompiler.html';
+                    }
+                </script>
+
+            </div>
+            <div class="griditem">Valid or invalid brackets <br>Difficulty : Medium <br>Explanation - The bracket opened
+                first must be closed last. <br>
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Go and code.">
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Sample code." onclick="changeTextareaValue5()">
+
+                <script>
+                    function changeTextareaValue5() {
+                        var defaultValue = "Valid invalid bracket code";
+
+                        // Set the value in localStorage
+                        localStorage.setItem('textareaValue', defaultValue);
+
+                        // Redirect to page1.html
+                        window.location.href = 'ccompiler.html';
+                    }
+                </script>
+
+            </div>
+            <div class="griditem">Triangle numbers<br>Difficulty : Medium <br>Explanation - The nth term is (n-1) more
+                than
+                the previous term. <br>
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Go and code.">
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Sample code." onclick="changeTextareaValue6()">
+
+                <script>
+                    function changeTextareaValue6() {
+                        var defaultValue = "Triangle number code";
+
+                        // Set the value in localStorage
+                        localStorage.setItem('textareaValue', defaultValue);
+
+                        // Redirect to page1.html
+                        window.location.href = 'ccompiler.html';
+                    }
+                </script>
+
+            </div>
+            <div class="griditem">Diamond pattern <br>Difficulty : Hard <br><img
+                    src="data:image/png;base64,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"
+                    alt="img not found"><br>
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Go and code.">
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Sample code." onclick="changeTextareaValue7()">
+
+                <script>
+                    function changeTextareaValue7() {
+                        var defaultValue = "Diamond Pattern code";
+
+                        // Set the value in localStorage
+                        localStorage.setItem('textareaValue', defaultValue);
+
+                        // Redirect to page1.html
+                        window.location.href = 'ccompiler.html';
+                    }
+                </script>
+
+            </div>
+            <div class="griditem">Number triangle pattern <br>Difficulty : Hard <br><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXxsBrBb5kdsbfLEO8BjH1jOsBfHF8Y0zV1w&usqp=CAU"
+                    alt="img not found"><br>
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Go and code.">
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Sample code." onclick="changeTextareaValue8()">
+
+                <script>
+                    function changeTextareaValue8() {
+                        var defaultValue = "Triangle Pattern code";
+
+                        // Set the value in localStorage
+                        localStorage.setItem('textareaValue', defaultValue);
+
+                        // Redirect to page1.html
+                        window.location.href = 'ccompiler.html';
+                    }
+                </script>
+
+            </div>
+            <div class="griditem">Number diamond pattern <br>Difficulty : Hard <br><img
+                    src="https://mycareerwise.com/storage/editor/images/Diamond%20Number%20Pattern.png"
+                    alt="img not found"><br>
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Go and code.">
+
+                <input style="margin-left: 200px;margin-top: 25px; float: left; font-size: large;" type="submit"
+                    value="Sample code." onclick="changeTextareaValue9()">
+
+                <script>
+                    function changeTextareaValue9() {
+                        var defaultValue = "Number Diamond pattern code";
+
+                        // Set the value in localStorage
+                        localStorage.setItem('textareaValue', defaultValue);
+
+                        // Redirect to page1.html
+                        window.location.href = 'ccompiler.html';
+                    }
+                </script>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

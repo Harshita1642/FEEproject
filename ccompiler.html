@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styling.css">
+    <script src="connect.js">
+
+
+    </script>
+</head>
+
+<body>
+    <div class="firstline">
+        Online Compiler
+    </div>
+    <div class="header">
+        <div class="left-icons">
+            <button class="run" id="runbtn">
+                <span class="material-symbols-outlined">
+                    play_arrow
+                </span>
+                RUN
+            </button>
+            <button class="stop">
+                <span class="material-symbols-outlined">
+                    stop
+                </span>
+                STOP
+            </button>
+            <button class="save">
+                <span class="material-symbols-outlined">
+                    save
+                </span>
+                SAVE
+            </button>
+            <button class="download">
+                <span class="material-symbols-outlined">
+                    download
+                </span>
+            </button>
+        </div>
+        <div class="right-icons">
+            <label for="launguage">Launguage</label>
+            <select name="launguage" class="launguage">
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+            </select>
+            <button class="info">
+                <span class="material-symbols-outlined">
+                    info
+                </span>
+            </button>
+            <button class="settings">
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="main">
+            main.c
+        </div>
+    </div>
+    <div class="content">
+        <div class="input">
+            <div
+                style=" color: black; font-size: 25px; font-family:'Times New Roman', Times, serif; font-weight: bold;">
+                # Write your code here
+            </div>
+
+            <textarea id="myTextarea"></textarea>
+
+            <script>
+                // Retrieve the stored value from localStorage
+                var storedValue = localStorage.getItem('textareaValue');
+
+                // Set the value of the textarea if a stored value exists, otherwise set it to an empty string
+                document.getElementById('myTextarea').value = storedValue ? storedValue : '';
+
+                // Store the textarea value in localStorage whenever it changes
+                document.getElementById('myTextarea').addEventListener('input', function () {
+                    localStorage.setItem('textareaValue', this.value);
+                });
+            </script>
+        </div>
+        <div class="output" >
+            <div
+                style=" color: black; font-size: 25px; font-family:'Times New Roman', Times, serif;
+                border-width: 1px; border-color: black; border-style: solid; background-color: white; font-weight: bold;">
+                # Output
+            </div>
+            <div id="outdiv">
+            </div>
+        </div>
+    </div>
+    <div class="exit-intent-popup">
+        <div class="coupon">
+            <span style="margin-left: 96%;" class="close"> X</span><br>
+            <div class="design-upper">
+                <div class="text">Thinking about leaving??</div>
+                <img src="compile2.png" style="height: 50px ;">
+            </div>
+            <div class="design-lower">
+                <img src="compile1.png" style="height: 130px; margin-left: 25px;">
+                <div
+                    style="margin-left: 10%; font-size: 30; font-weight: bold; font-family:Arial, Helvetica, sans-serif;">
+                    Stay a little bit longer<br> Be a pro Coder
+                    <br> Be consistent
+                </div>
+            </div>
+            <form action="challenges.html">
+                <input class="btn" type="submit" value="Ready for challenges??">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
