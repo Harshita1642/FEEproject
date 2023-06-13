@@ -14,6 +14,7 @@
         Online Compiler
     </div>
     <div class="header">
+        <button id="exit">EXIT</button>
         <div class="left-icons">
             <button class="run" id="runbtn">
                 <span class="material-symbols-outlined">
@@ -33,18 +34,14 @@
                 </span>
                 SAVE
             </button>
-            <button class="download">
-                <span class="material-symbols-outlined">
-                    download
-                </span>
-            </button>
+            <button class="clear" onclick="clearout()">CLEAR OUTPUT</button>
         </div>
         <div class="right-icons">
-            <label for="launguage">Launguage</label>
-            <select name="launguage" class="launguage">
+            <label for="launguage">Language</label>
+            <select name="launguage" class="launguage" id="lang">
                 <option value="C">C</option>
-                <option value="C++">C++</option>
-                <option value="Java">Java</option>
+                <!-- <option value="C++">C++</option>
+                <option value="Java">Java</option> -->
                 <option value="Python">Python</option>
             </select>
             <button class="info">
@@ -60,9 +57,7 @@
         </div>
     </div>
     <div class="middle">
-        <div class="main">
-            main.c
-        </div>
+        <div class="main" id="filename"></div>
     </div>
     <div class="content">
         <div class="input">
@@ -73,32 +68,21 @@
 
             <textarea id="myTextarea"></textarea>
 
-            <script>
-                // Retrieve the stored value from localStorage
-                var storedValue = localStorage.getItem('textareaValue');
-
-                // Set the value of the textarea if a stored value exists, otherwise set it to an empty string
-                document.getElementById('myTextarea').value = storedValue ? storedValue : '';
-
-                // Store the textarea value in localStorage whenever it changes
-                document.getElementById('myTextarea').addEventListener('input', function () {
-                    localStorage.setItem('textareaValue', this.value);
-                });
-            </script>
         </div>
-        <div class="output" >
+        <div class="output">
             <div
                 style=" color: black; font-size: 25px; font-family:'Times New Roman', Times, serif;
                 border-width: 1px; border-color: black; border-style: solid; background-color: white; font-weight: bold;">
                 # Output
             </div>
             <div id="outdiv">
+
             </div>
         </div>
     </div>
     <div class="exit-intent-popup">
         <div class="coupon">
-            <span style="margin-left: 96%;" class="close"> X</span><br>
+            <span style="margin-left: 97%;" class="close"> X</span><br>
             <div class="design-upper">
                 <div class="text">Thinking about leaving??</div>
                 <img src="compile2.png" style="height: 50px ;">
@@ -114,6 +98,7 @@
             <form action="challenges.html">
                 <input class="btn" type="submit" value="Ready for challenges??">
             </form>
+            <button class="btn" onclick="window.open('', '_self', ''); window.close();">Exit anyway...</button>
         </div>
     </div>
 
