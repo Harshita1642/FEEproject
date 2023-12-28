@@ -1,3 +1,5 @@
+// JS file to handle the logic
+
 const mouseEvent = e => {
     const shouldShowExitIntent =
         !e.toElement &&
